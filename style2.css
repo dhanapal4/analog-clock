@@ -1,0 +1,97 @@
+.clock{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+.clock .time{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.time.center{
+    height: 5px;
+    width: 5px;
+    background-color: brown;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock .hand{
+    position: absolute;
+    background-color: black;
+}
+
+.hand:is(.hour,.minute,.second){
+    bottom: 50%;
+    left: 50%;
+}
+
+.hour{
+    --rotate:0;
+    height: 50px;
+    width: 5px;
+    transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+    transform-origin: bottom;
+
+}
+.minute{
+    --rotate:0;
+    height: 55px;
+    width: 3px;
+    background-color: aqua;
+    transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+    transform-origin: bottom;
+}
+
+.second{
+    --rotate:0;
+    height: 65px;
+    width: 1.5px;
+    background-color: red !important;
+    transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+    transform-origin: bottom;
+}
+
+
+.time.one{
+    transform: rotate(30deg);
+}
+.time.two{
+    transform: rotate(60deg);
+}
+.time.three{
+    transform: rotate(90deg);
+}
+.time.four{
+    transform: rotate(120deg);
+}
+.time.five{
+    transform: rotate(150deg);
+}
+.time.six{
+    transform: rotate(180deg);
+}
+.time.seven{
+    transform: rotate(210deg);
+}
+.time.eight{
+    transform: rotate(240deg);
+}
+.time.nine{
+    transform: rotate(270deg);
+}
+.time.ten{
+    transform: rotate(300deg);
+}
+.time.eleven{
+    transform: rotate(330deg);
+}
+
+
+
